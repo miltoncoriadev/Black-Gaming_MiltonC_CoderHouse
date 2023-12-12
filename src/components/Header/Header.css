@@ -1,0 +1,46 @@
+.Header {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: center;
+}
+.Header div {
+    width: 30%;
+}
+
+.logo {
+    width: 50px;
+}
+
+.div-logo {
+    display: flex;
+    align-items: center;
+    color: #6a15e1;
+    font-size: 10px;
+}
+.div-logo h1 {
+    font-size: 25px;
+}
+
+.div-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div-search form {
+    width: 100%;
+}
+.div-search form input {
+    height: 35px;
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+}
+.div-cart {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
