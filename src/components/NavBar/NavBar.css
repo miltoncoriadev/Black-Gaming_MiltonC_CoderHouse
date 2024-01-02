@@ -8,10 +8,16 @@
 .NavBar ul {
     display: flex;
     width: 700px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     list-style: none;
+    padding: 0;
 }
 .NavBar ul li a {
     text-decoration: none;
     color: white;
+    transition: 0.3s all;
+}
+.NavBar ul li a:hover {
+    color: #b78df2;
+    text-decoration: underline;
 }

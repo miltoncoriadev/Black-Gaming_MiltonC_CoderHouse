@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #202324;
 }
 
 .div-productos {
   display: flex;
-  width: 90%;
+  flex-wrap: wrap;
+  width: 75%;
+  justify-content: center;
+  gap: 20px;
+  padding: 4rem 0;
 }

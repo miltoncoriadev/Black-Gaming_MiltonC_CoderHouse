@@ -1,0 +1,21 @@
+.Card {
+    width: 260px;
+    height: 410px;
+    background-color: black!important;
+    color: white!important;
+}
+.img {
+    width: 240px;
+    height: 240px;
+}
+.title {
+    height: 55px;
+    overflow: hidden;
+    font-size: 20px!important;
+}
+.price {
+    height: 8px;
+}
+.btn {
+    color: #b78df2!important;
+}

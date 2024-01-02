@@ -1,14 +1,13 @@
 .Header {
     height: 80px;
-    width: 100%;
+    margin: auto;
     background-color: rgb(21, 21, 21);
     display: flex;
     justify-content: center;
 }
 .Header div {
-    width: 30%;
+    width: 32%;
 }
-
 .logo {
     width: 50px;
 }
@@ -43,4 +42,10 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+}
+
+@media (min-width: 991px) {
+    .Header div {
+        width: 25%;
+    }
 }
