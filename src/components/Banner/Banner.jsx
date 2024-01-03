@@ -1,9 +1,10 @@
 import banner from '../../assets/img/banner.png'
+import './Banner.css'
 
 const Banner = () => {
   return (
     <div className='Banner'>
-        <img style={{width:'100%'}} src={banner} alt="" />
+        <img className='img-banner' src={banner} alt="" />
     </div>
   )
 }

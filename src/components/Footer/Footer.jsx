@@ -1,12 +1,13 @@
-import './Footer.css';
+import "./Footer.css";
 
 const Footer = () => {
     return (
-        <div className='Footer'>
-            <div style={{marginLeft:"10px"}} class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4">
-      <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-  
-    </div>
+        <div className="Footer">
+            <div
+                className="div-copy"
+            >
+                <p>&copy; 2024 Black Gaming. Todos los derechos reservados.</p>
+            </div>
         </div>
     );
 };

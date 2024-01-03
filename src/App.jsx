@@ -1,47 +1,39 @@
-// * Configuracion
-import React, { useEffect, useState } from "react";
-// Import bootstrap
-// import '../scss/styles.scss'
-import * as bootstrap from "bootstrap";
+// * Configurations
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-// * Database
-import products from "../data/products.json";
-
-// * Estilos
+// * Styles
 import "./App.css";
 
-// * Componentes
+// * Components
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
-import Footer from "./components/Footer/Footer";
-import CardProduct from "./components/CardProduct/CardProduct";
 import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import Banner from "./components/Banner/Banner";
+import Footer from "./components/Footer/Footer";
+
+// * Pages
+import HomePage from "./pages/HomePage/HomePage";
+import ProductsPage from "./pages/ProductsPage/ProductsPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
 
 const App = () => {
-    
     return (
-        <div className="App">
-            <Header />
-            <NavBar />
-            <ItemListContainer />
-            <Banner />
-            <div className="div-productos" style={{ margin: "auto" }}>
-                {products.map((product) => {
-                    return (
-                        <div key={product.id}>
-                            <CardProduct
-                                id={product.id}
-                                nombre={product.nombre}
-                                precio={product.precio}
-                                imagen={product.imagen}
-                            />
-                        </div>
-                    );
-                })}
+        <Router>
+            <div className="App">
+                <Header />
+                <NavBar />
+                <ItemListContainer />
+                
+                <Routes>
+                    <Route path="/" element={<HomePage />}></Route>
+                    <Route path="/productos" element={<ProductsPage />}></Route>
+                    <Route path="/producto/detalle/:idProducto" element={<DetailPage />}></Route>
+                    <Route path="/categoria/:idCategoria" element={<CategoryPage />}></Route>
+                </Routes>
+                
+                <Footer />
             </div>
-            <Footer />
-        </div>
+        </Router>
     );
 };
 export default App;

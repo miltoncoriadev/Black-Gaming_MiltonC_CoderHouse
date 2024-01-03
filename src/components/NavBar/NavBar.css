@@ -12,12 +12,12 @@
     list-style: none;
     padding: 0;
 }
-.NavBar ul li a {
+.link {
     text-decoration: none;
     color: white;
     transition: 0.3s all;
 }
-.NavBar ul li a:hover {
+.link:hover {
     color: #b78df2;
     text-decoration: underline;
 }

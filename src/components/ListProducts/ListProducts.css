@@ -1,0 +1,16 @@
+.div-productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 0;
+}
+.carrousel-basic {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.link-product{
+    text-decoration: none;
+}

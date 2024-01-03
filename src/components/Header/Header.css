@@ -11,6 +11,12 @@
 .logo {
     width: 50px;
 }
+.link-logo {
+    text-decoration: none;
+    color: #6a15e1;
+    display: flex;
+    align-items: center;
+}
 
 .div-logo {
     display: flex;

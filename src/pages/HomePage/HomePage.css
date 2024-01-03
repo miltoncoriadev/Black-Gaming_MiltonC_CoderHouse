@@ -1,0 +1,25 @@
+.Home {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-filter {
+    width: 75%;
+    margin: auto;
+    padding: 2rem 0;
+    color: white;
+}
+.btn-products {
+    display: flex;
+    padding: 0.75rem 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #b78df2;
+    text-align: center;
+    margin-top: 2rem;
+}
+.btn-products:hover {
+    text-decoration: underline;
+}

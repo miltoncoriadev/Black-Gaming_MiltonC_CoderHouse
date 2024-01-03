@@ -4,15 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #202324;
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #050505;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #b78df26c;
+  border: 1px solid #b78df2;
 }
 
-.div-productos {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75%;
-  justify-content: center;
-  gap: 20px;
-  padding: 4rem 0;
+body {
+  background-color: #202324;
 }

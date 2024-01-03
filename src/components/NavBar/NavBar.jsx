@@ -1,29 +1,19 @@
+// * Styles
 import "./NavBar.css";
-import Categories from '../Categories/Categories'
+
+// * Configurations
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
     return (
         <div className="NavBar">
             <ul>
-                <Categories />
-                <li>
-                    <a href="#">Categorías</a>
-                </li>
-                <li>
-                    <a href="#">PC de Escritorio</a>
-                </li>
-                <li>
-                    <a href="#">Notebooks</a>
-                </li>
-                <li>
-                    <a href="#">Placas de Video</a>
-                </li>
-                <li>
-                    <a href="#">Procesadores</a>
-                </li>
-                <li>
-                    <a href="#">Monitores</a>
-                </li>
+                <Link className="link" to='/'>Inicio</Link>
+                <Link className="link" to='/categoria/pc-de-escritorio'>PC de Escritorio</Link>
+                <Link className="link" to='/categoria/notebooks'>Notebooks</Link>
+                <Link className="link" to='/categoria/placas-de-video'>Placas de Video</Link>
+                <Link className="link" to='/categoria/procesadores'>Procesadores</Link>
+                <Link className="link" to='/categoria/monitores'>Monitores</Link>
             </ul>
         </div>
     );
