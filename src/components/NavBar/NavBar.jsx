@@ -1,4 +1,5 @@
 // * Styles
+import { left } from "@popperjs/core";
 import "./NavBar.css";
 
 // * Configurations
@@ -8,7 +9,7 @@ const NavBar = () => {
     return (
         <div className="NavBar">
             <ul>
-                <Link className="link" to='/'>Inicio</Link>
+                <Link style={{borderRight: '1px solid white', paddingRight:'1.2rem'}} className="link" to='/categorias'>CATEGORIAS</Link>
                 <Link className="link" to='/categoria/pc-de-escritorio'>PC de Escritorio</Link>
                 <Link className="link" to='/categoria/notebooks'>Notebooks</Link>
                 <Link className="link" to='/categoria/placas-de-video'>Placas de Video</Link>

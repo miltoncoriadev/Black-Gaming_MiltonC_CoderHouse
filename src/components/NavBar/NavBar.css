@@ -16,6 +16,8 @@
     text-decoration: none;
     color: white;
     transition: 0.3s all;
+    display: flex;
+    align-items: center;
 }
 .link:hover {
     color: #b78df2;

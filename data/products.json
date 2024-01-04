@@ -10,8 +10,8 @@
         "stock": 10,
         "categoria": "placas-de-video",
         "detalle": "Núcleos CUDA: 384, Bus: PCI Express 3.0 - Procesador gráfico: GeForce GT 1030 - Resolución: (máxima analógica) 1920 x 1200 Pixeles - Máxima resolución: 1920 x 1200 Pixeles - Familia de procesadores de gráficos: NVIDIA - Frecuencia del procesador: 1266 MHz - Ancho de datos: 64 bit - Velocidad de memoria del reloj: 6008 MHz - Gráficos discretos memoria del adaptador: 2 GB - Tipo de memoria de adaptador gráfico: GDDR5 - Versión OpenGL: 4.5",
-        "imagen": "/src/assets/img/products/product-1.png"
-,        "filter": "destacado"
+        "imagen": "/src/assets/img/products/product-1.png",
+        "filter": "destacado"
     },
     {
         "id": 2,
@@ -24,8 +24,8 @@
         "stock": 12,
         "categoria": "fuentes",
         "detalle": "Watts: 600 - Dimensiones: 160 x 150 x 86 mm (L x W x H) - Color: Negro - Tamaño del ventilador: 140 mm a rulemanes - Largo del cable de alimentación: 500 mm - Conectores internos: 24P(20+4) x1, Molex x2, SATA x6, PCI-E 8P(6+2) x2, CPU 8P(4+4) x1 - ATX Version: ATX 12V 2.30 - Voltaje de entrada: 100-240 V - Corriente de entrada: 6.3A Max. - Frecuencia de entrada: 47/63 Hz - Factor de Corrección (PFC): >0.95 - Eficiencia: 80Plus Bronce - Capacitores Principales: Japoneses 105ºC Sólidos - Protecciones: Contra sobre tensión / voltaje / temperatura / carga y contra bajo voltaje y cortocircuitos - Temperatura de operación: 30-40 °C - Regulaciones: CE/CB/CCC/EAC/FCC",
-        "imagen": "/src/assets/img/products/product-2.png"
-,        "filter": "descuento"
+        "imagen": "/src/assets/img/products/product-2.png",
+        "filter": "descuento"
     },
     {
         "id": 3,
@@ -38,8 +38,8 @@
         "stock": 9,
         "categoria": "gabinetes",
         "detalle": "Torre: MEDIA - Soporte MB:  ATX, Micro-ATX, Mini-ITX - Ranuras de expansión:7 - Material: SPCC y ABS y vidrio templado - Ventana: Izquierda - Soporte de radiador: Superior: 240 mm / Frontal: 360 mm (el disco duro es extraíble para admitir 360 AIO en el frente), 280 mm / Trasero: 120 mm - Soporte de fans: Superior: 2 x 120 mm / Delantero: 2 x 120 mm, 2 x 140 mm / Trasero: 1 x 120 mm - Ventiladores preinstalados: Frontal: 2 ventiladores ARGB de 120 mm / Trasero: 1 ventilador ARGB de 120 mm - Bahías de unidad:  2 x 3,5 o 1 x 2,5 + 1 x 3,5(jaula HDD) / 2 x 2,5 - Puerto de E/S:USB 3.0 x1, USB 2.0 x2, Audio HD x1, Control LED del ventilador x1 - Limitación de altura del disipador de CPU: 160 mm - Limitación de longitud de VGA: 300 mm - Limitación de longitud de PSU: 150 mm - Dimensiones (largo x ancho x alto): 363x210x447mm - Peso neto: 4,72 kg",
-        "imagen": "/src/assets/img/products/product-3.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-3.png",
+        "filter": null
     },
     {
         "id": 4,
@@ -52,8 +52,8 @@
         "stock": 6,
         "categoria": "pc-de-escritorio",
         "detalle": "Almacenamiento | Disco Duro: Compatible (No Incluido) - Disco Sólido: 240Gb || Conectividid | Wi-Fi: No - Bluetooth: No || Memoria Ram | Capacidad: 16 Gigas - Formato: UDIMM - Expandible: Sí || Procesador | Intel: Core i9 - Modelo: 12900 - Núcleos: 16 (24 Subprocesos) - Frecuencia: 5.10Ghz - Caché: 30Mb Cache || Puertos | Usb 2.0: Sí - Hdmi: Sí - Audio/Mic 3.5: Sí || Sistema Operativo | Windows 11: Compatible - Versión: 64-bits - Instalado: No",
-        "imagen": "/src/assets/img/products/product-4.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-4.png",
+        "filter": null
     },
     {
         "id": 5,
@@ -66,8 +66,8 @@
         "stock": 26,
         "categoria": "memorias-ram",
         "detalle": "Voltaje: 1.2V - Capacidad: 4Gb - Frecuencia: 2666Mhz - Módulos: 1 - Tipo: DDR4 - Latencia: 16-18-18",
-        "imagen": "/src/assets/img/products/product-5.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-5.png",
+        "filter": null
     },
     {
         "id": 6,
@@ -80,8 +80,8 @@
         "stock": 19,
         "categoria": "discos-solidos-ssd",
         "detalle": "Factor de forma: M.2 2280 - Interfaz: PCIe 4.0 NVMe - Capacidad: 512 GB - Controlador: Phison E18 - NAND: TLC 3D - Lectura/escritura secuencial: hasta 7.000/3.900 MB/s - Lectura/escritura aleatoria 4K1: hasta 450.000/900.000 IOPS - Total Bytes Written (TBW)3: 400 TBW - Dimensiones: 80 mm x 22 mm x 2,21 mm",
-        "imagen": "/src/assets/img/products/product-6.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-6.png",
+        "filter": null
     },
     {
         "id": 7,
@@ -94,8 +94,8 @@
         "stock": 21,
         "categoria": "procesadores",
         "detalle": "Número de núcleos de CPU: 6 - Número de subprocesos: 12 - Reloj de aumento máx: Hasta 5.1GHz - Reloj base: 3.8GHz - Caché L3 total: 32MB - Desbloqueados: Sí - Tipo de memoria: DDR5 - Canales de memoria: 2 - Modelo de gráficos: AMD Radeon™ Graphics",
-        "imagen": "/src/assets/img/products/product-7.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-7.png",
+        "filter": null
     },
     {
         "id": 8,
@@ -108,8 +108,8 @@
         "stock": 31,
         "categoria": "motherboards",
         "detalle": "Especificaciones: AM4 Socket AMD Ryzen™ 2nd Generation/Ryzen™ with Radeon™ Vega Graphics/Ryzen™ 1s Generation/7th Generation A-series/Athlon X4 Processors Supports CPU up to 8  cores - Memoria: 2 x DIMM, Max. 32GB, DDR4 3200(O.C.)/3000(O.C.)/2933(O.C.)/2800(O.C.)/2666/2400/2133 MHz Un-buffered Memory - Gráficos: Integrated Graphics in the AMD Ryzen™ with Radeon™ Vega Graphics/ 7th Generation A-Series APU - Interfaz de Almacenamiento: A1 x M.2 Socket 3, with M key, type 2242/2260/2280 storage devices support (SATA & PCIE 3.0 x 4 mode) ; 4 x SATA 6Gb/s",
-        "imagen": "/src/assets/img/products/product-8.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-8.png",
+        "filter": null
     },
     {
         "id": 9,
@@ -122,8 +122,8 @@
         "stock": 11,
         "categoria": "notebooks",
         "detalle": "Almacenamiento | Disco Sólido: 256Gb || Conectividid | Wi-Fi: Sí - Bluetooth: Sí || Memoria Ram | Capacidad: 8gb - Formato: SODIMM - Expandible: Sí || Procesador | Intel: Core i3 - Modelo: 1115G4 - Núcleos: 2 (3 Subprocesos) - Frecuencia: 4.10Ghz - Caché: 6Mb Cache || Puertos | Usb 3.2: Sí - Hdmi: Sí - Audio/Mic 3.5: Sí || Sistema Operativo | Windows 10: Home - Versión: 64-bits - Instalado: Si || Pantalla | Resolucion: 1366x768 - Tecnologia: HD || Otras caracteristicas | Sensor Dactilar: No - Teclado Numérico: Sí - Cámara Web: Sí",
-        "imagen": "/src/assets/img/products/product-9.png"
-,        "filter": null
+        "imagen": "/src/assets/img/products/product-9.png",
+        "filter": null
     },
     {
         "id": 10,
