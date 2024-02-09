@@ -5,6 +5,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin: 2rem 0;
+    margin-bottom: 1.5rem;
     text-decoration: none;
+}
+.div-category {
+    padding: 2rem 0;
 }

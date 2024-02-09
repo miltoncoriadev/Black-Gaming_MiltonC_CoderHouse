@@ -1,11 +1,7 @@
 // * Configurations
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
-import { db } from "./firebase/config";
-
-import { addDoc, collection } from "firebase/firestore";
-
-import productsData from "../data/products.json";
+import { useSelector, useDispatch } from "react-redux";
+import { addCart, removeCart, incrementAmount } from "./redux/features/cart/cartSlice";
 
 // * Styles
 import "./App.css";
@@ -17,30 +13,14 @@ import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
 import Footer from "./components/Footer/Footer";
 
 // * Pages
-// import HomePage from "./pages/HomePage/HomePage";
-// import ProductsPage from "./pages/ProductsPage/ProductsPage";
-// import DetailPage from "./pages/DetailPage/DetailPage";
-// import CategoryPage from "./pages/CategoryPage/CategoryPage";
-// import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
+import HomePage from "./pages/HomePage/HomePage";
+import ProductsPage from "./pages/ProductsPage/ProductsPage";
+import DetailPage from "./pages/DetailPage/DetailPage";
+import CategoryPage from "./pages/CategoryPage/CategoryPage";
+import CategoriesPage from "./pages/CategoriesPage/CategoriesPage";
+import CartPage from "./pages/CartPage/CartPage"
 
-// service cloud.firestore {
-//     match /databases/{database}/documents {
-//       match /{document=**} {
-//         allow read, write: if false;
-//       }
-//     }
-//   }
 const App = () => {
-    const values = {
-        name: "hola",
-    };
-
-    const crear = async () => {
-        for (const product of productsData) {
-            const docRef = await addDoc(collection(db, "collectionProducts"), product);
-        }
-    };
-
     return (
         <Router>
             <div className="App">
@@ -48,15 +28,17 @@ const App = () => {
                 <NavBar />
                 <ItemListContainer />
 
-                <button onClick={crear}>Crear colleccion</button>
-
-                {/* <Routes>
+                <main>
+                <Routes>
                     <Route path="/" element={<HomePage />}></Route>
                     <Route path="/productos" element={<ProductsPage />}></Route>
                     <Route path="/producto/detalle/:idProducto" element={<DetailPage />}></Route>
                     <Route path="/categoria/:idCategoria" element={<CategoryPage />}></Route>
                     <Route path="/categorias" element={<CategoriesPage />}></Route>
-                </Routes> */}
+                    <Route path="/carrito" element={<CartPage />}></Route>
+                </Routes>
+                </main>
+                
 
                 <Footer />
             </div>

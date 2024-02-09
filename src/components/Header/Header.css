@@ -4,9 +4,10 @@
     background-color: rgb(21, 21, 21);
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 .Header div {
-    width: 32%;
+    width: 45%;
 }
 .logo {
     width: 50px;
@@ -28,22 +29,6 @@
     font-size: 25px;
 }
 
-.div-search {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.div-search form {
-    width: 100%;
-}
-.div-search form input {
-    height: 35px;
-    border: 0;
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    outline: none;
-}
 .div-cart {
     display: flex;
     justify-content: flex-end;
@@ -52,6 +37,6 @@
 
 @media (min-width: 991px) {
     .Header div {
-        width: 25%;
+        width: 35%;
     }
 }

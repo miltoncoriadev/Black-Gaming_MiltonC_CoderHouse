@@ -1,0 +1,12 @@
+.CartPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.title-cart{
+    color: white;
+    font-size: 40px;
+    margin: 2rem;
+}

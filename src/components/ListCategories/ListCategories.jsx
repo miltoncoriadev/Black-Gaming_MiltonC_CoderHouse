@@ -7,27 +7,29 @@ import useProducts from "../../hooks/useProducts";
 
 // * Components
 import CardCategory from "../CardCategory/CardCategory";
+import Spinner from "../Spinner/Spinner";
 
 import "./ListCategories.css";
 
 const ListCategories = () => {
-    const { products } = useProducts("/data/products.json");
+    const { products, isLoading } = useProducts();
 
-    const categorias = [
-        ...new Set(products.map((producto) => producto.categoria)),
-    ];
+    const categories = [...new Set(products.map((product) => product.category))];
 
     return (
-        <div>
-            {categorias.map((category) => {
-                return (
-                    <div>
-                        <Link to={`/categoria/${category}`} className="Categories">
-                            <CardCategory category={category} />
-                        </Link>
-                    </div>
-                );
-            })}
+        <div className="div-category" style={{ margin: "auto" }}>
+            {isLoading ?
+                <Spinner />
+                :
+                categories.map((category) => {
+                    return (
+                        <div key={category}>
+                            <Link to={`/categoria/${category}`} className="Categories">
+                                <CardCategory category={category} />
+                            </Link>
+                        </div>
+                    );
+                })}
         </div>
     );
 };

@@ -5,7 +5,7 @@ const CardCategory = ({ category }) => {
         <div
             className="Category"
             style={{
-                background: `url(/src/assets/img/categories/${category}.jpg)`,
+                background: `url(/src/assets/img/${category}.jpg)`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
             }}

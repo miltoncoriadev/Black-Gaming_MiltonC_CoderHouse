@@ -13,18 +13,11 @@ const Header = () => {
                 </Link>
             </div>
 
-            <div className="div-search">
-                <form action="/">
-                    <input
-                        type="search"
-                        name="search"
-                        id="search"
-                        placeholder="Buscar"
-                    />
-                </form>
+            <div className="div-cart">
+                <CartWidget />
             </div>
 
-            <CartWidget />
+            
         </div>
     );
 };

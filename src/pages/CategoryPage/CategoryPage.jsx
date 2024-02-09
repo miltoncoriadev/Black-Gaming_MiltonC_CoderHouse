@@ -10,8 +10,8 @@ const CategoryPage = () => {
 
     return (
         <div>
-            <h1 style={{color:'white', textAlign:'center', fontSize:'30px', marginTop:'2rem'}}>{idCategoria.replaceAll("-", " ").toUpperCase()}</h1>
-            <ListProducts category={idCategoria} />
+            <h1 style={{ color: 'white', textAlign: 'center', fontSize: '30px', marginTop: '2rem' }}>{idCategoria.replaceAll("-", " ").toUpperCase()}</h1>
+            <ListProducts filter={"category"} filterParam={idCategoria} />
         </div>
     );
 };

@@ -3,22 +3,79 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import AddIcon from "@mui/icons-material/Add";
 import RemoveIcon from "@mui/icons-material/Remove";
+import Toastify from 'toastify-js'
+import "toastify-js/src/toastify.css"
+
+// * Redux
+import { useSelector, useDispatch } from "react-redux";
+import { addCart, removeCart, incrementAmount } from "../../redux/features/cart/cartSlice";
 
 // * Hooks
 import useProducts from "../../hooks/useProducts";
 
+// * Components
+import Spinner from "../Spinner/Spinner";
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+
 const ListProducts = ({ id }) => {
-    const { products } = useProducts("/data/products.json");
-    const toThousand = (n) =>
-        n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    let { products, isLoading } = useProducts("id", id);
+    const product = products[0];
 
-    const product = products.find((product) => product.id == id);
+    const toThousand = (n) => n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    const [amount, setAmount] = useState(1);
 
-    const [cantidad, setCantidad] = useState(1);
+    const dispatch = useDispatch();
+    const counterCart = useSelector((state) => state.cart.products);
+
+    const handlerAddCart = () => {
+        const productFound = counterCart.find(product => product.id === id)
+        if (productFound) {
+            dispatch(incrementAmount({ id: productFound.id, amount: amount }))
+
+            Toastify({
+                text: `Ya se agregó anteriormente el producto`,
+                duration: 3000,
+                offset: {
+                    x: 20,
+                    y: 50
+                  },
+            }).showToast();
+        } else {
+            dispatch(addCart({
+                stock: product.stock,
+                image: product.image,
+                price: product.price,
+                price_cart: product.price * amount,
+                amount: amount,
+                detail: product.detail,
+                model: product.model,
+                brand: product.brand,
+                name: product.name,
+                id: product.id,
+                category: product.category
+            }))
+
+            Toastify({
+                text: "El producto fue añadido al carrito",
+                duration: 3000,
+                offset: {
+                    x: 50,
+                    y: 50
+                  },
+            }).showToast();
+        }
+    }
+    // const handlerRemoveCart = () => {
+    //     dispatch(removeCart(id))
+    // }
+
 
     return (
-        <div>
-            {product ? (
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            {isLoading ? (
+                <Spinner />
+            ) : product ? (
                 <div
                     style={{
                         display: "flex",
@@ -33,8 +90,8 @@ const ListProducts = ({ id }) => {
                             height: "800px",
                             objectFit: "cover",
                         }}
-                        src={product.imagen}
-                        alt=""
+                        src={product.image}
+                        alt={product.name}
                     />
                     <div
                         style={{
@@ -43,17 +100,13 @@ const ListProducts = ({ id }) => {
                             width: "40%",
                         }}
                     >
-                        <h1>{product.nombre}</h1>
+                        <h1>{product.name}</h1>
                         <div style={{ display: "flex", alignItems: "center" }}>
-                            <h2>${toThousand(product.precio)}</h2>
-                            <h4 style={{ margin: "0 0.5rem 0 4rem" }}>{cantidad}</h4>
+                            <h2>${toThousand(product.price)}</h2>
+                            <h4 style={{ margin: "0 0.5rem 0 4rem" }}>{amount}</h4>
                             <button
                                 onClick={() => {
-                                    setCantidad(
-                                        cantidad < product.stock
-                                            ? cantidad + 1
-                                            : cantidad
-                                    );
+                                    setAmount(amount < product.stock ? amount + 1 : amount);
                                 }}
                                 style={{
                                     border: "none",
@@ -67,9 +120,7 @@ const ListProducts = ({ id }) => {
                             </button>
                             <button
                                 onClick={() => {
-                                    setCantidad(
-                                        cantidad > 1 ? cantidad - 1 : cantidad
-                                    );
+                                    setAmount(amount > 1 ? amount - 1 : amount);
                                 }}
                                 style={{
                                     border: "none",
@@ -81,8 +132,17 @@ const ListProducts = ({ id }) => {
                             >
                                 <RemoveIcon />
                             </button>
+                            <div style={{margin: "0 0.5rem 0 4rem"}}>
+                            <Button onClick={handlerAddCart} variant="contained">Agregar al carrito</Button>
+                            </div>
+                            
                         </div>
-                        <p>{product.detalle}</p>
+                        
+                        <div>
+                            
+                        </div>
+                        <p>{product.detail}</p>
+
                     </div>
                 </div>
             ) : null}

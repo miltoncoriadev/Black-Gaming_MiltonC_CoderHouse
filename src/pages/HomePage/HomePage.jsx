@@ -15,10 +15,8 @@ const HomePage = () => {
         <div>
             <Banner />
             <div className="Home">
-                <h1 className="title-filter">Productos en ofertas</h1>
-                <ListProducts filter="descuento" />
                 <h1 className="title-filter">Productos destacados</h1>
-                <ListProducts filter="destacado" />
+                <ListProducts limit={10}/>
                 <button
                     onClick={() => {
                         navigate("/productos");

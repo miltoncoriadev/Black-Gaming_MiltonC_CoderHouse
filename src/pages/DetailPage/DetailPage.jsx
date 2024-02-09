@@ -11,7 +11,7 @@ const DetailPage = () => {
     const { idProducto } = useParams();
 
     return (
-        <div>
+        <div style={{margin:"50px"}}>
             <CardDetail id={idProducto}/>
         </div>
     );
